@@ -1,16 +1,19 @@
 Nome: Maria Luiza de Oliveira Pinholate
+
 Número de matrícula: 909860
 
-Proposta do projeto: Um  site para informar os usuários em primeira mão sobre filmes e séries que ainda serão lançados. 
-
-Breve descrição sobre o projeto: Site sobre filmes e séries q vão lançar em brave, mostrando imagem,nome, data. 
+Proposta do projeto: Um  site para informar os usuários em primeira mão sobre filmes que ainda serão lançados. Mostrando imagem, nome e data. 
 
 
-Imagem do esboço (wireframe) criado para o projeto: 
-![wireframe do site](img%20readme/wireframe.jpg)
+
+Print versão DESKTOP: 
+![Imagem topo site - desktop](img.readme/topo-desktop.png)
+![Imagem meio site - desktop](img.readme/meio-desktop.png)
+![Imagem rodape site - desktop](img.readme/final-desktop.png)
 
 
-Print da home-page criada: 
-![Topo site ](img%20readme/topo.png)
-![Meio site ](img%20readme/meio.png)
-![Meio site ](img%20readme/final.png)
+
+Print versão MOBILE: 
+![Topo site - mobile ](img.readme/topo-mobile.png)
+![Meio site - mobile ](img.readme/meio-mobile.png)
+![rodape site - mobile ](img.readme/final-mobile.png)
