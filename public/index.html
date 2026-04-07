@@ -1,126 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Maluflix</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <meta property="og:title" content="Maluflix - Filmes e Séries">
-    <meta property="og:description" content="Veja lançamentos e novidades">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
+    <header class="bg-black">
+        <nav class="navbar navbar-expand-md container">
 
-<header class="header">
-    
-    <h1>MALUFLIX</h1>
+            <a class="navbar-brand text-danger fw-bold fs-3" href="#">MALUFLIX</a>
 
-    <nav class="menu">
-        <a href="#">Início</a>
-        <a href="#">Lançamentos </a>
-        <a href="#"> Novidades </a>
-        <a href="#">Minha Lista</a>
-    </nav>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+                <span class="hamburguer-icone">☰</span>
+            </button>
 
-    <div class="pesquisa">
-        <input type="text" placeholder="Buscar...">
-        <button>Buscar</button>
-    </div>
-</header>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link menu-link" href="#">Início</a></li>
+                    <li class="nav-item"><a class="nav-link menu-link" href="#">Lançamentos</a></li>
+                    <li class="nav-item"><a class="nav-link menu-link" href="#">Novidades</a></li>
+                    <li class="nav-item"><a class="nav-link menu-link" href="#">Minha Lista</a></li>
+                </ul>
 
-<main class="principal">
+                <form class="d-flex gap-2 mt-2 mt-md-0">
+                    <input class="form-control busca-input" type="text" placeholder="Buscar...">
+                    <button class="btn btn-danger" type="submit">Buscar</button>
+                </form>
+            </div>
 
-    
-    <section class="banner">
-        <img src="img/banner.png" alt="banner em destaque do site ">
+        </nav>
+    </header>
 
-        <div class="banner-texto">
-            <h1>Grande Estreia</h1>
-            <p> 📅 Abril 2026  </p>
-            <p class="descricao ">  
-            Veja os próximos lançamentos e descubra as novidades antes de todo mundo!
-            </p>
-    </p>
-            <button> Ver mais  </button>
+    <main class="container my-4">
+
+        <section class="banner">
+            <img src="img/banner.png" class="img-fluid w-100 rounded banner-img" alt="Banner do filme em destaque">
+            <div class="banner-texto text-white">
+                <h1>Grande Estreia</h1>
+                <p>📅 Abril 2026</p>
+                <p> Em breve nos cinemas </p>
+                <button class="btn btn-danger" type="button">Ver mais</button>
+
+            </div>
+        </section>
+
+        <section class="my-5">
+            <div class="texto-intro">
+                <h2>Sobre o Maluflix</h2>
+                <p>
+                    O Maluflix é um site feito para quem ama filmes.
+                    Aqui você encontra lançamentos, novidades e conteúdos exclusivos
+                    para ficar sempre por dentro do que está por vir no mundo do entretenimento.
+                </p>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <h2>🔥 Em breve</h2>
+            <div class="row mt-3">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card bg-dark text-white h-100">
+                        <img src="https://picsum.photos/id/870/400/250?grayscale&blur=2" class="card-img-top" alt="capa do filme Misterio Sombrio">
+                        <div class="card-body text-center">
+                            <h5>Mistério Sombrio</h5>
+                            <p class="mb-3">Um filme cheio de mistério e suspense.</p>
+                            <p>📅 Maio 2026</p>
+                            <button class="btn btn-danger" type="button">Ver mais</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card bg-dark text-white h-100">
+                        <img src="https://picsum.photos/id/1/400/250" class="card-img-top" alt="capa do filme O Computador">
+                        <div class="card-body text-center">
+                            <h5>O Computador</h5>
+                            <p> Uma história envolvente que prende do começo ao fim.</p>
+                            <p>📅 Maio 2026</p>
+                            <button class="btn btn-danger" type="button">Ver mais</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card bg-dark text-white h-100">
+                        <img src="https://picsum.photos/id/7/400/250" class="card-img-top" alt="capa do filme Roubo perfeito">
+                        <div class="card-body text-center">
+                            <h5>Roubo Perfeito</h5>
+                            <p class="mb-3"> Uma jornada emocionante cheia de reviravoltas.</p>
+                            <p>📅 Junho 2026</p>
+                            <button class="btn btn-danger" type="button">Ver mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <h2>🔴 Mais aguardados</h2>
+            <div class="row mt-3">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card bg-dark text-white h-100">
+                        <img src="https://picsum.photos/id/202/400/250" class="card-img-top" alt="capa do filme Medo profundo">
+                        <div class="card-body text-center">
+                            <h5>Medo Profundo</h5>
+                            <p class="mb-3"> Uma historia intrigante com momentos surpreendentes.</p>
+                            <button class="btn btn-danger" type="button">Ver mais</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card bg-dark text-white h-100">
+                        <img src="https://picsum.photos/id/20/400/250" class="card-img-top" alt="capa do filme O celular secreto ">
+                        <div class="card-body text-center">
+                            <h5>O Celular Secreto</h5>
+                            <p class="mb-3"> Uma trama intensa que desafia a mente.</p>
+                            <button class="btn btn-danger" type="button">Ver mais</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card bg-dark text-white h-100">
+                        <img src="https://picsum.photos/id/50/400/250" class="card-img-top" alt="capa do filme o Silencio ">
+                        <div class="card-body text-center">
+                            <h5>Silêncio</h5>
+                            <p class="mb-3"> Um filme cheio de ação, mistério e emoção.</p>
+                            <button class="btn btn-danger" type="button">Ver mais</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="formulario mt-5 rounded">
+            <h2>✉ Receber Novidades</h2>
+            <p class="subtitulo">Fique por dentro dos lançamentos </p>
+            <form class="d-flex flex-column gap-3 mt-3">
+                <input type="text" placeholder="Seu nome" class="form-control">
+                <input type="email" placeholder="Seu e-mail" class="form-control">
+
+                <select name="genero" class="form-select">
+                    <option value="" disabled selected>Gênero favorito</option>
+                    <option value="acao">Ação</option>
+                    <option value="comedia">Comédia</option>
+                    <option value="drama">Drama</option>
+                    <option value="suspense">Suspense</option>
+                    <option value="terror">Terror</option>
+                    <option value="romance">Romance</option>
+                </select>
+
+                <button class="btn btn-danger w-100">
+                    Quero receber novidades
+                </button>
+            </form>
+        </section>
+
+    </main>
+    <footer class="bg-black text-white text-center p-3">
+        <p class="mb-1">❤ 2026 - Maluflix</p>
+        <div class="footer-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">YouTube</a>
         </div>
-    </section>
-
-    
-    <section class="categoria">
-        <h2> 🔥 Em breve </h2>
-
-        <div class="cards">
-            <article class="card">
-                <img src="https://picsum.photos/id/870/200/300?grayscale&blur=2" alt="capa da série">
-                <h3> Mistério Sombrio  </h3>
-                <p>Um filme cheio de mistério e suspense.</p>
-                <p> 📅 Maio 2026 </p>
-                <button>Ver mais </button>
-            </article>
-
-            <article class="card">
-                <img src="https://picsum.photos/id/1/200/300" alt="capa da série">
-                <h3> O Computador  </h3>
-                <p> Uma história envolvente que prende do começo ao fim.</p>
-                <p> 📅 Maio 2026 </p>
-                <button>Ver mais </button>
-            </article>
-
-            <article class="card">
-                <img src="https://picsum.photos/id/7/200/300.jpg" alt= "capa da série">
-                <h3> Roubo Perfeito </h3>
-                <p>Uma jornada emocionante cheia de reviravoltas. </p>
-                <p> 📅 Junho 2026 </p>
-                <button> Ver mais </button>
-            </article>
-        </div>
-    </section>
-
-    <section class="categoria">
-        <h2> 🔴 Mais aguardados </h2>
-
-        <div class="cards">
-            <article class="card">
-                <img src="https://picsum.photos/id/202/200/300.jpg" alt="capa do filme">
-                <h3> Medo Profundo </h3>
-                <p>Uma historia intrigante com momentos surpreendentes.</p>
-                <button>Ver mais </button>
-            </article>
-
-            <article class="card">
-                <img src="https://picsum.photos/id/20/200/300.jpg" alt="capa do filme">
-                <h3> O celular Secreto  </h3>
-                <p> Uma trama intensa que desafia a mente.</p>
-                <button>Ver mais </button>
-            </article>
-
-            <article class="card">
-                <img src="https://picsum.photos/id/50/200/300.jpg" alt="capa do filme">
-                <h3> Silêncio </h3>
-                <p>Um filme cheio de ação, misterio e emoção.</p>
-
-                <button> Ver mais </button>
-            </article>
-        </div>
-    </section>
-
-    
-    <section class="formulario">
-        <h2> ✉ Receber Novidades</h2>
-
-        <form>
-            <input type="text" name="nome" placeholder="Nome">
-            <input type="email" name="email" placeholder="Email">
-            <input type="text" name="genero" placeholder="Gênero favorito">
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-</main>
-
-<footer class="footer">
-    <p> ❤ 2026 - Maluflix</p>
-</footer>
-
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
+
 </html>
